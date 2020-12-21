@@ -19,7 +19,7 @@ public class Basecase extends ReportClass {
         ChromeOptions options = new ChromeOptions();
         //options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--headless");
-        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-extensions"); // disdemoabling extensions
         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox");
@@ -27,6 +27,6 @@ public class Basecase extends ReportClass {
         CommonVar constantVars = new CommonVar();
         final String url = "https://valeodev:F0rD3v0nly!@dev.reports.valeopartners.com/";
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 }
