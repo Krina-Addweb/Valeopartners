@@ -19,14 +19,16 @@ public class Basecase extends ReportClass {
         ChromeOptions options = new ChromeOptions();
         //options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--headless");
+        WebDriver driver = new ChromeDriver(options);
         options.addArguments("--disable-extensions"); // disdemoabling extensions
         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox");
-        driver =new ChromeDriver();
+        //driver =new ChromeDriver();
         CommonVar constantVars = new CommonVar();
         final String url = "https://valeodev:F0rD3v0nly!@dev.reports.valeopartners.com/";
         driver.get(url);
-        driver.manage().window().maximize();
+        System.out.println("Title of the page is -> " + driver.getTitle());
+        // driver.manage().window().maximize();
     }
 }
