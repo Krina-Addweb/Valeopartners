@@ -3,7 +3,10 @@
 <suite name="Regression suite">
     <test verbose="2" name="LoginTest">
         <classes>
-            <!--<class name="AEDU.Reports.ReportClass"/>-->
+            <class name="com.valeopartnersautmation.Reports.ReportClass"/>
+            <class name="com.valeopartnersautmation.TestCase.BaseCase"/>
+            <class name="com.valeopartnersautmation.TestCase.TestValeoReport"/>
+            <class name="com.valeopartnersautmation.TestCase.TestValeoReport"/>
         </classes>
     </test>
 </suite>
